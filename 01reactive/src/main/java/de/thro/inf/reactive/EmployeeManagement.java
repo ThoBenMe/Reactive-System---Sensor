@@ -68,6 +68,7 @@ public class EmployeeManagement {
             employee.transition(e.getDirection());
             logger.info("New Employee added. Employee ID: " + employee.getID() + ", Current state: "
                     + employee.getCurrentState());
+            return;
         }
 
         logger.severe("Unknown error occurred. Could not find or create employee.");

@@ -2,16 +2,16 @@ package de.thro.inf.reactive;
 
 public class Event {
 
-    private String id;
+    private String ID;
     private Direction direction;
 
     public Event(String id, Direction direction) {
-        this.id = id;
+        this.ID = id;
         this.direction = direction;
     }
 
     public String getID() {
-        return id;
+        return ID;
     }
 
     public Direction getDirection() {
