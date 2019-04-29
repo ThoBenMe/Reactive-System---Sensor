@@ -15,20 +15,20 @@ public class EmployeeTest {
         Employee m2 = new Employee();
         Employee m3 = new Employee();
         //test, if an employee can reach the state PRESENT and from there on to ERROR
-        m.shift(LEFT);
+        m.transition(LEFT);
         Assert.assertEquals("State = IN_TRANSITION.", m.getCurrentState(), Employee.State.IN_TRANSITION);
-        m.shift(RIGHT);
+        m.transition(RIGHT);
         Assert.assertEquals("State = PRESENT", m.getCurrentState(), Employee.State.PRESENT);
-        m.shift(LEFT);
+        m.transition(LEFT);
         Assert.assertEquals("State = ERROR", m.getCurrentState(), Employee.State.ERROR);
-        m.shift(LEFT);
+        m.transition(LEFT);
         Assert.assertEquals("State: ERROR", m.getCurrentState(), Employee.State.ERROR);
         //test, if an employee reaches ERROR if he turns RIGHT at the start
-        m2.shift(RIGHT);
+        m2.transition(RIGHT);
         Assert.assertEquals("State: ERROR", m2.getCurrentState(), Employee.State.ERROR);
         //test, if an employee reaches ABSENT from IN_TRANSITION
-        m3.shift(LEFT);
-        m3.shift(LEFT);
+        m3.transition(LEFT);
+        m3.transition(LEFT);
         Assert.assertEquals("State: ABSENT", m3.getCurrentState(), Employee.State.ABSENT);
     }
 
