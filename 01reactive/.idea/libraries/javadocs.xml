@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="javadocs">
+    <CLASSES />
+    <JAVADOC>
+      <root url="file://$USER_HOME$/GSON/gson/gson/docs/javadocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/GSON/gson/gson/src/main/java" />
+      <root url="file://$USER_HOME$/GSON/gson/gson/src/main/java-templates" />
+      <root url="file://$USER_HOME$/GSON/gson/gson/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
